@@ -74,15 +74,26 @@ The project was developed to demonstrate Flutter best practices such as:
 
 ```text
 lib/
+├── core/
+│   └── images/
+│       └── app_images.dart       # Asset image path constants
 ├── models/
-│   ├── dummy.dart            # Mock data for categories and products
-│   └── product_model.dart    # Product data structure
-├── widgets/
-│   ├── app_search_bar.dart   # Custom search bar widget
-│   ├── categories_button.dart# Category selection button
-│   ├── product_widget.dart   # Card widget for items
-│   └── title_bar.dart        # Header title component
+│   ├── dummy.dart                # Mock data for categories & products
+│   └── product_model.dart        # Product data class
 ├── screens/
+│   ├── homescreen.dart           # Home landing page
+│   ├── product_screen.dart       # Products listing screen
+│   ├── productdetailsscr...      # Product details screen
+│   └── splash.dart               # Splash screen
+├── widgets/
+│   ├── app_search_bar.dart       # Search bar component
+│   ├── AppButton.dart            # Custom app button widget
+│   ├── applogo.dart              # Application logo widget
+│   ├── categories_button.dart    # Category selection chip
+│   ├── product_widget.dart       # Product item card
+│   ├── search_text_field.dart    # Search input field
+│   └── title_bar.dart            # Top app bar header
+└── main.dart                     # App entry point
 ```
 
 ## 🚀 How To Run The App
